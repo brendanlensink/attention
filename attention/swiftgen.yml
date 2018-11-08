@@ -1,0 +1,6 @@
+xcassets:
+  inputs:
+    - attention/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: attention/Generated/AssetCatalog.swift

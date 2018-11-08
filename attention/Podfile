@@ -1,0 +1,12 @@
+# Disable sending stats
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
+platform :ios, '11.0'
+
+target 'attention' do
+
+  pod 'Bluejay', :git => 'https://github.com/steamclock/bluejay.git', :branch => 'v0.7.1'
+  pod 'SwiftLint'
+  pod 'SwiftGen'
+
+end

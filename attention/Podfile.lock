@@ -1,0 +1,33 @@
+PODS:
+  - Bluejay (0.7.1)
+  - SwiftGen (6.0.2)
+  - SwiftLint (0.27.0)
+
+DEPENDENCIES:
+  - Bluejay (from `https://github.com/steamclock/bluejay.git`, branch `v0.7.1`)
+  - SwiftGen
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftGen
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  Bluejay:
+    :branch: v0.7.1
+    :git: https://github.com/steamclock/bluejay.git
+
+CHECKOUT OPTIONS:
+  Bluejay:
+    :commit: 1396f861afabea7a76a682053662ed06440d3374
+    :git: https://github.com/steamclock/bluejay.git
+
+SPEC CHECKSUMS:
+  Bluejay: a1df6e19ae414e7aac1fef1b237441226c6e1506
+  SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+
+PODFILE CHECKSUM: 1beb09a31c6ab5fa096b7876586fa3b9dbfc7214
+
+COCOAPODS: 1.5.3

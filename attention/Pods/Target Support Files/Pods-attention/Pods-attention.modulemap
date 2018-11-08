@@ -1,0 +1,6 @@
+module Pods_attention {
+  umbrella header "Pods-attention-umbrella.h"
+
+  export *
+  module * { export * }
+}

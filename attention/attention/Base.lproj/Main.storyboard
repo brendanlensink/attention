@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3S1-3i-24q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="attention" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iAZ-Jd-BZb"/>
+                    <connections>
+                        <segue destination="HBR-Gd-RBz" kind="show" identifier="showConnected" id="GxF-rx-tgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="66.11694152923539"/>
+        </scene>
+        <!--ConnectedVC-->
+        <scene sceneID="baz-Gb-GLx">
+            <objects>
+                <viewController id="HBR-Gd-RBz" customClass="ConnectedVC" customModule="attention" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UNx-rc-XJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEY-5H-nVD">
+                                <rect key="frame" x="32" y="160" width="311" height="300"/>
+                                <state key="normal" backgroundImage="button"/>
+                                <state key="selected" image="button_down"/>
+                                <state key="highlighted" backgroundImage="button_down">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDown:" destination="HBR-Gd-RBz" eventType="touchDown" id="kkF-d6-Hzk"/>
+                                    <action selector="touchUpInside:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="eqH-lO-L2t"/>
+                                    <action selector="touchUpOutside:" destination="HBR-Gd-RBz" eventType="touchUpOutside" id="ypg-s2-ssV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gB-AU-Ysh">
+                                <rect key="frame" x="32" y="510" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="6eZ-r1-acS"/>
+                                    <constraint firstAttribute="width" secondItem="9gB-AU-Ysh" secondAttribute="height" multiplier="1:1" id="i2i-3W-Bey"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="hungry">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" backgroundImage="hungry_down">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="hungry_down">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hungryTouchDown:" destination="HBR-Gd-RBz" eventType="touchDown" id="4Cc-6c-Scg"/>
+                                    <action selector="touchUpInside:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="a1S-cN-uCn"/>
+                                    <action selector="touchUpOutside:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="WGs-Sv-dfb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIk-o0-Xec">
+                                <rect key="frame" x="218" y="510" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eIk-o0-Xec" secondAttribute="height" multiplier="1:1" id="M1L-0E-kbi"/>
+                                    <constraint firstAttribute="width" constant="125" id="h4i-FW-tJg"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="dance"/>
+                                <state key="highlighted" backgroundImage="dance_down">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="danceTouchDown:" destination="HBR-Gd-RBz" eventType="touchDown" id="DaZ-Ai-b3s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wEY-5H-nVD" firstAttribute="centerX" secondItem="UNx-rc-XJ4" secondAttribute="centerX" id="5eJ-NN-vEf"/>
+                            <constraint firstItem="9gB-AU-Ysh" firstAttribute="leading" secondItem="Rre-gy-eQv" secondAttribute="leading" constant="32" id="7Ys-4t-FtI"/>
+                            <constraint firstItem="wEY-5H-nVD" firstAttribute="leading" secondItem="Rre-gy-eQv" secondAttribute="leading" constant="32" id="Kmb-Z0-n9M"/>
+                            <constraint firstItem="Rre-gy-eQv" firstAttribute="bottom" secondItem="eIk-o0-Xec" secondAttribute="bottom" constant="32" id="LSI-Eu-vlW"/>
+                            <constraint firstItem="Rre-gy-eQv" firstAttribute="trailing" secondItem="wEY-5H-nVD" secondAttribute="trailing" constant="32" id="T6w-we-f8g"/>
+                            <constraint firstItem="9gB-AU-Ysh" firstAttribute="top" secondItem="wEY-5H-nVD" secondAttribute="bottom" constant="50" id="TUF-tu-ylM"/>
+                            <constraint firstItem="Rre-gy-eQv" firstAttribute="trailing" secondItem="eIk-o0-Xec" secondAttribute="trailing" constant="32" id="lTg-OZ-n24"/>
+                            <constraint firstItem="Rre-gy-eQv" firstAttribute="bottom" secondItem="9gB-AU-Ysh" secondAttribute="bottom" constant="32" id="s0s-O3-yZC"/>
+                            <constraint firstItem="9gB-AU-Ysh" firstAttribute="leading" secondItem="Rre-gy-eQv" secondAttribute="leading" constant="32" id="sMa-3a-jLo"/>
+                            <constraint firstItem="Rre-gy-eQv" firstAttribute="bottom" secondItem="9gB-AU-Ysh" secondAttribute="bottom" constant="32" id="yW8-PD-uG3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rre-gy-eQv"/>
+                    </view>
+                    <connections>
+                        <outlet property="attentionButton" destination="wEY-5H-nVD" id="u2A-2M-Oox"/>
+                        <outlet property="danceButton" destination="eIk-o0-Xec" id="LXi-Sz-AHN"/>
+                        <outlet property="hungryButton" destination="9gB-AU-Ysh" id="LaX-bE-DxG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JL5-Wl-tZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="65.217391304347828"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vOz-Z3-gwz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3S1-3i-24q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3nx-hO-Bpq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uea-ig-BIA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNR-Ti-ifb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="350" height="300"/>
+        <image name="button_down" width="350" height="300"/>
+        <image name="dance" width="350" height="300"/>
+        <image name="dance_down" width="350" height="300"/>
+        <image name="hungry" width="350" height="300"/>
+        <image name="hungry_down" width="350" height="300"/>
+    </resources>
+</document>
