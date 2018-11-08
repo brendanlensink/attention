@@ -50,7 +50,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEY-5H-nVD">
-                                <rect key="frame" x="32" y="160" width="311" height="300"/>
+                                <rect key="frame" x="37.5" y="195" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Oa3-Jy-1AK"/>
+                                    <constraint firstAttribute="width" constant="300" id="PWm-md-kc3"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="button"/>
                                 <state key="selected" image="button_down"/>
                                 <state key="highlighted" backgroundImage="button_down">
@@ -58,8 +62,8 @@
                                 </state>
                                 <connections>
                                     <action selector="touchDown:" destination="HBR-Gd-RBz" eventType="touchDown" id="kkF-d6-Hzk"/>
-                                    <action selector="touchUpInside:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="eqH-lO-L2t"/>
-                                    <action selector="touchUpOutside:" destination="HBR-Gd-RBz" eventType="touchUpOutside" id="ypg-s2-ssV"/>
+                                    <action selector="touchUp:" destination="HBR-Gd-RBz" eventType="touchUpOutside" id="LsN-7h-BMe"/>
+                                    <action selector="touchUp:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="Tfl-9f-VM6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gB-AU-Ysh">
@@ -79,43 +83,56 @@
                                 </state>
                                 <connections>
                                     <action selector="hungryTouchDown:" destination="HBR-Gd-RBz" eventType="touchDown" id="4Cc-6c-Scg"/>
-                                    <action selector="touchUpInside:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="a1S-cN-uCn"/>
-                                    <action selector="touchUpOutside:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="WGs-Sv-dfb"/>
+                                    <action selector="touchUp:" destination="HBR-Gd-RBz" eventType="touchUpOutside" id="OpR-Zl-xS5"/>
+                                    <action selector="touchUp:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="Zm2-Dx-QGg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIk-o0-Xec">
                                 <rect key="frame" x="218" y="510" width="125" height="125"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="5Wa-ol-YyP"/>
                                     <constraint firstAttribute="width" secondItem="eIk-o0-Xec" secondAttribute="height" multiplier="1:1" id="M1L-0E-kbi"/>
-                                    <constraint firstAttribute="width" constant="125" id="h4i-FW-tJg"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="doggo"/>
+                                <state key="highlighted" backgroundImage="doggo_down">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dogTouchDown:" destination="HBR-Gd-RBz" eventType="touchDown" id="z7D-rT-BeY"/>
+                                    <action selector="touchUp:" destination="HBR-Gd-RBz" eventType="touchUpInside" id="0n3-Ry-gWY"/>
+                                    <action selector="touchUp:" destination="HBR-Gd-RBz" eventType="touchUpOutside" id="9Xu-1g-Xea"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZs-hY-Rx0">
+                                <rect key="frame" x="218" y="96" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Du3-Fd-XCJ"/>
+                                    <constraint firstAttribute="width" secondItem="WZs-hY-Rx0" secondAttribute="height" multiplier="1:1" id="PfY-EK-iKh"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="dance"/>
                                 <state key="highlighted" backgroundImage="dance_down">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="danceTouchDown:" destination="HBR-Gd-RBz" eventType="touchDown" id="DaZ-Ai-b3s"/>
+                                    <action selector="danceTouchDown:" destination="HBR-Gd-RBz" eventType="touchDown" id="CTO-eZ-frp"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wEY-5H-nVD" firstAttribute="centerX" secondItem="UNx-rc-XJ4" secondAttribute="centerX" id="5eJ-NN-vEf"/>
-                            <constraint firstItem="9gB-AU-Ysh" firstAttribute="leading" secondItem="Rre-gy-eQv" secondAttribute="leading" constant="32" id="7Ys-4t-FtI"/>
-                            <constraint firstItem="wEY-5H-nVD" firstAttribute="leading" secondItem="Rre-gy-eQv" secondAttribute="leading" constant="32" id="Kmb-Z0-n9M"/>
-                            <constraint firstItem="Rre-gy-eQv" firstAttribute="bottom" secondItem="eIk-o0-Xec" secondAttribute="bottom" constant="32" id="LSI-Eu-vlW"/>
-                            <constraint firstItem="Rre-gy-eQv" firstAttribute="trailing" secondItem="wEY-5H-nVD" secondAttribute="trailing" constant="32" id="T6w-we-f8g"/>
-                            <constraint firstItem="9gB-AU-Ysh" firstAttribute="top" secondItem="wEY-5H-nVD" secondAttribute="bottom" constant="50" id="TUF-tu-ylM"/>
-                            <constraint firstItem="Rre-gy-eQv" firstAttribute="trailing" secondItem="eIk-o0-Xec" secondAttribute="trailing" constant="32" id="lTg-OZ-n24"/>
-                            <constraint firstItem="Rre-gy-eQv" firstAttribute="bottom" secondItem="9gB-AU-Ysh" secondAttribute="bottom" constant="32" id="s0s-O3-yZC"/>
-                            <constraint firstItem="9gB-AU-Ysh" firstAttribute="leading" secondItem="Rre-gy-eQv" secondAttribute="leading" constant="32" id="sMa-3a-jLo"/>
-                            <constraint firstItem="Rre-gy-eQv" firstAttribute="bottom" secondItem="9gB-AU-Ysh" secondAttribute="bottom" constant="32" id="yW8-PD-uG3"/>
+                            <constraint firstItem="Rre-gy-eQv" firstAttribute="trailing" secondItem="WZs-hY-Rx0" secondAttribute="trailing" constant="32" id="1sR-Tb-jQH"/>
+                            <constraint firstItem="9gB-AU-Ysh" firstAttribute="leading" secondItem="Rre-gy-eQv" secondAttribute="leading" constant="32" id="CYM-BV-CU5"/>
+                            <constraint firstItem="WZs-hY-Rx0" firstAttribute="top" secondItem="Rre-gy-eQv" secondAttribute="top" constant="32" id="H56-XJ-AMa"/>
+                            <constraint firstItem="eIk-o0-Xec" firstAttribute="bottom" secondItem="Rre-gy-eQv" secondAttribute="bottom" constant="-32" id="LS4-fi-0Dw"/>
+                            <constraint firstItem="Rre-gy-eQv" firstAttribute="trailing" secondItem="eIk-o0-Xec" secondAttribute="trailing" constant="32" id="Nuk-vj-WdB"/>
+                            <constraint firstItem="9gB-AU-Ysh" firstAttribute="top" secondItem="wEY-5H-nVD" secondAttribute="bottom" constant="15" id="dID-Js-oex"/>
+                            <constraint firstItem="Rre-gy-eQv" firstAttribute="bottom" secondItem="9gB-AU-Ysh" secondAttribute="bottom" constant="32" id="oDW-qS-Is4"/>
+                            <constraint firstItem="wEY-5H-nVD" firstAttribute="centerX" secondItem="UNx-rc-XJ4" secondAttribute="centerX" id="ras-yi-jiM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rre-gy-eQv"/>
                     </view>
                     <connections>
                         <outlet property="attentionButton" destination="wEY-5H-nVD" id="u2A-2M-Oox"/>
-                        <outlet property="danceButton" destination="eIk-o0-Xec" id="LXi-Sz-AHN"/>
                         <outlet property="hungryButton" destination="9gB-AU-Ysh" id="LaX-bE-DxG"/>
                     </connections>
                 </viewController>
@@ -147,6 +164,8 @@
         <image name="button_down" width="350" height="300"/>
         <image name="dance" width="350" height="300"/>
         <image name="dance_down" width="350" height="300"/>
+        <image name="doggo" width="350" height="300"/>
+        <image name="doggo_down" width="350" height="300"/>
         <image name="hungry" width="350" height="300"/>
         <image name="hungry_down" width="350" height="300"/>
     </resources>

@@ -23,6 +23,8 @@ internal enum Asset {
   internal static let buttonTemplate = ImageAsset(name: "button_template")
   internal static let dance = ImageAsset(name: "dance")
   internal static let danceDown = ImageAsset(name: "dance_down")
+  internal static let doggo = ImageAsset(name: "doggo")
+  internal static let doggoDown = ImageAsset(name: "doggo_down")
   internal static let hungry = ImageAsset(name: "hungry")
   internal static let hungryDown = ImageAsset(name: "hungry_down")
 }

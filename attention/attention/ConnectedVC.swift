@@ -40,11 +40,11 @@ class ConnectedVC: UIViewController {
         danceParty()
     }
 
-    @IBAction func touchUpInside(_ sender: Any) {
-        touchUp()
+    @IBAction func dogTouchDown(_ sender: Any) {
+        writeColor(r: 0x00, g: 0xFF, b: 0x00)
     }
 
-    @IBAction func touchUpOutside(_ sender: Any) {
+    @IBAction func touchUp(_ sender: Any) {
         touchUp()
     }
 
