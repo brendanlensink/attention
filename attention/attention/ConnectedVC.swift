@@ -24,6 +24,7 @@ class ConnectedVC: UIViewController {
             fatalError("Need to set bluejay")
         }
 
+        navigationController?.setNavigationBarHidden(true, animated: false)
         bluejay.register(observer: self)
     }
 
